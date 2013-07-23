@@ -4,8 +4,13 @@
 <p>Due Date: <%= @todo.due_date %></p>
 <p>Completed: <%= @todo.completed %></p>
 
+<<<<<<< HEAD
 <h3>Contacts:</h3>
   <% @todo.contacts.each.each do |contact| %>
+=======
+<h3>Contacts assigned to this task:</h3>
+  <% @todo.contacts.each do |contact| %>
+>>>>>>> upstream/master
   <p>
     <%= render partial: contact %>
     <%= button_to "Remove Contact",
