@@ -1,9 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Londrina+Shadow);
-@import url(http://fonts.googleapis.com/css?family=Mystery+Quest);
+@import url(http://fonts.googleapis.com/css?family=Rum+Raisin);
+
+body {
+  text-align: center;
+}
 
 #content {
   margin: 0 auto;
-  width: 360px;
+  width: 320px;
 }
 
 #header {
@@ -15,8 +19,12 @@
   font-size: 100px;
 }
 
+#game {
+  margin-left: 5px;
+}
+
 #timer {
-  font-family: 'Mystery Quest', cursive;
+  font-family: 'Rum Raisin', sans-serif;
   font-size: 20px;
 }
 
@@ -28,8 +36,8 @@
   clear: both;
 }
 
-.column {
-  border: 1px solid #595139;
+.card {
+  border: 1px solid #9C3F4F;
   float: left;
   font-family: 'Londrina Shadow', cursive;
   font-size: 50px;
@@ -38,19 +46,61 @@
   text-align: center;
   vertical-align: middle;
   width: 50px;
+  cursor: pointer;
 }
 /* apply with toggle class */
 .hover {
-  background-color: #A6977B;
+  background-color: #bf6574;
+  color: #ebe4e2;
 }
 /* apply when two cards match */
 .found {
   background-color: #595139;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .won {
-  background-color: #F2F0CE;
-  border: 1px solid #83A603;
-  color: #83A603;
+  background-color: #09ada5;
+  border: 1px solid #139694;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  background: #34495e;
+  color: white;
+  font-size: 12.5px;
+  padding: 10px 26px;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #4e6d8d;
+  color: white;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.btn:active, .btn.active {
+  background-color: #2c3e50;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }

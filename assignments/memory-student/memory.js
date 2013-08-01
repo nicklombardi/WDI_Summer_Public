@@ -23,15 +23,46 @@ var lastId = '',
 //Code In Here gets executed once code is ready. ie hovering, clicking events//
 $(function() {
 
+  $('#small').click(startGame);
+
 });
+
+
 
 // Initializes the game and creates the board
 function startGame() {
+  _.each(lettersSmall, function (val, i) {
+    lastId = i;
+    letters = val;
+    $('#game').append('<div id='+ i + '><span>' + letters +'</span></div');
+    $('#game div').addClass('column');
+    $('#game span').addClass('hide');
 
+      console.log(lastId + letters);
+
+  }),
+
+    $('.column').click(cardClick);
 }
 
 // Flips a card and checks for a match
 function cardClick() {
+  // _.each(lastId, alert)
+  var thisId = $(this).attr("id");
+  console.log(thisId);
+
+  var guessOne = $('#game span:nth('+thisId+')').addClass('show');
+  var guessTwo = $('#game span:nth('+thisId+')').addClass('show');
+
+  console.log(guessOne);
+  console.log(guessTwo);
+
+
+  if (guessOne.text() === guessTwo.text());
+
+
+
+
 
 }
 
