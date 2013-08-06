@@ -14,8 +14,13 @@ class School
     @students[name] = gpa
   end
 
+<<<<<<< HEAD
   def average_gpa()
     students.values.reduce(:+).to_f / @students.count
+=======
+  def average_gpa
+    @students.values.reduce(:+).to_f / @students.count
+>>>>>>> upstream/master
   end
 
   def withdraw_student(name)
