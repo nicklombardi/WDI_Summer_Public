@@ -3,10 +3,17 @@ Raffler.Routers.Entries = Backbone.Router.extend({
 		'': 'index',
 		'entries/:id': 'show'
 	},
+	initialize: function(){
+		this.collection = new Raffler.Collections.Entries();
+		this.collection.fetch({reset: true}); // Will explain in a second
+	},
 	index: function() {
-		alert("Hello from Router Index");
+		var view = new Raffler.Views.EntriesIndex({ collection: this.collection });
+		$('#container').html(view.render().el);
 	},
 	show: function(id) {
-		alert("Hello from Router Show Number:" + id);
+		var entry = this.collection.get(id)
+		var view = new Raffler.Views.EntryShow({ model: entry });
+		$('#container').html(view.render().el);
 	}
 });
