@@ -1,0 +1,11 @@
+development:
+    adapter: postgresql
+    database: rails4_blog_dev
+    pool: 5
+    timeout: 5000
+
+test:
+    adapter: postgresql
+    database: rails4_blog_test
+    pool: 5
+    timeout: 5000
