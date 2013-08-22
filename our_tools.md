@@ -3,11 +3,11 @@
 ## Programming Languages
 * Ruby
 * HTML
+* CSS
 * JavaScript
 * SQL
 
 ## DSL/Libraries
-
 * cofffescript
 * Rspec
 * Jasmine
@@ -28,7 +28,6 @@
 * sinatra
 
 ## Testing Tools
-
 * Cucumber
 * Rspec
 * Pry
