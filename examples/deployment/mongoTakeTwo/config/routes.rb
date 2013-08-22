@@ -1,14 +1,14 @@
-FireHouse::Application.routes.draw do
+MongoTakeTwo::Application.routes.draw do
+  resources :burittos
+
+
   resources :basses
 
 
   resources :tacos
 
 
-  resources :fires
-
-
-  resources :firefighters
+  resources :books
 
 
   # The priority is based upon order of creation:
